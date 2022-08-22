@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="description">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="video-wrapper" id="video-block">
+    <div class="player">
+        <div id="preloader" class="preloader">
+                <div class="loadingio-spinner-reload-g5sixyc2a0e">
+                    <div class="ldio-994wu50a3tf">
+                        <div><div></div><div></div><div></div></div>
+                    </div>
+                </div>
+                <span class="preloader__percents">
+                    <span id="percents"></span>
+                </span>
+        </div>
+    
+        <!--Прелоадер-->
+        <video class="video" poster="../assets/img/first-screen-desc.png">
+            <!--            <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>-->
+            <source src="./Rick Astley - Never Gonna Give You Up (Official Music Video).mp4"
+                    type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <!--            <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>-->
+        </video>
+        <div class="controls_progress">
+            <input class="progress" type="range" value="0" min="0" max="100" id="range"/>
+        </div>
+        <div class="controls">
+            <div class="controls-buttons">
+                <div class="controls_play">
+                    <svg class="play_btn" width="18" height="21" viewBox="0 0 18 21" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9941 8.78421C18.3275 9.55401 18.3275 11.4785 16.9941 12.2483L3.25241 20.1821C1.91907 20.9519 0.252404 19.9897 0.252404 18.4501L0.252405 2.58247C0.252405 1.04287 1.91907 0.0806131 3.25241 0.850413L16.9941 8.78421Z"
+                              fill="#F4F1EB"/>
+                    </svg>
+                </div>
+                <div class="controls_pause">
+                    <svg class="pause_btn" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7V18H0V0Z" fill="#F4F1EB"/>
+                        <path d="M9 0H16V18H9V0Z" fill="#F4F1EB"/>
+                    </svg>
+
+                </div>
+            </div>
+            <div class="volume">
+                <svg class="volume_svg" width="23" height="27" viewBox="0 0 23 27" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.3517 15.101C3.31168 14.3004 3.31168 12.7319 4.3517 11.9313L13.8793 4.597C15.1944 3.58461 17.0993 4.52214 17.0993 6.18181L17.0993 20.8505C17.0993 22.5102 15.1944 23.4477 13.8793 22.4353L4.3517 15.101Z"
+                          fill="#F4F1EB"/>
+                    <path d="M3.60938 9.25171C3.60938 8.69942 4.05709 8.25171 4.60938 8.25171H10.19V18.7806H4.60937C4.05709 18.7806 3.60938 18.3329 3.60938 17.7806V9.25171Z"
+                          fill="#F4F1EB"/>
+                    <line class="svg_line" x1="2.39078" y1="4.30334" x2="19.4022" y2="21.3148" stroke="#F4F1EB"
+                          stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
